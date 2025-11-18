@@ -1,5 +1,9 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { Registration } from "../registration/registration";
+import { Login } from "~/registration/login";
+import { Success } from "~/registration/success";
+import { EmailVerify } from "~/registration/emailVerify";
+import { Welcome } from "~/registration/welcome";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +13,9 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
+  // return <Registration />;
+  // return <Login />;
+  // return <Success />;
+  // return <EmailVerify />;
   return <Welcome />;
 }
